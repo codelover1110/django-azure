@@ -81,29 +81,29 @@ WSGI_APPLICATION = 'ajhdjango.wsgi.application'
 # }
 
 
-# DATABASES = {
-#     'default': {
-#         'NAME': 'ShopeVote',
-#         'ENGINE': 'sqlserver_ado',
-#         'HOST': '12.0.2000.8',
-#         'USER': 'ShopVoteAdmin',
-#         'PASSWORD': 'Shop2020!',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'ShopeVote',
+        'ENGINE': 'sqlserver_ado',
+        'HOST': '12.0.2000.8',
         'USER': 'ShopVoteAdmin',
-        'PASSWORD':'Shop2020!',
-        'HOST':'shopvote.database.windows.net',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'SQL Server Native Client 11.0',
-        }
+        'PASSWORD': 'Shop2020!',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'sql_server.pyodbc',
+#         'NAME': 'ShopeVote',
+#         'USER': 'ShopVoteAdmin',
+#         'PASSWORD':'Shop2020!',
+#         'HOST':'shopvote.database.windows.net',
+#         'PORT': '',
+#         'OPTIONS': {
+#             'driver': 'SQL Server Native Client 11.0',
+#         }
+#     }
+# }
 
 
 
